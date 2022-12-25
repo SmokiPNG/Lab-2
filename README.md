@@ -72,10 +72,10 @@ function getComments($page_count) {
 ```
 function likeSubmit($conn,$row) {
  require("connection.php");
-    if(isset($_POST[$row['cid']])) {
-        $cid = $row['cid'];
+    if(isset($_POST[$row['message_id']])) {
+        $cid = $row['message_id'];
         $likes = $row['likes']+1;
-        $query = "UPDATE comments SET likes = '$likes' WHERE cid = '$cid'";
+        $query = "UPDATE comments SET likes = '$likes' WHERE message_id = '$cid'";
         $result = mysqli_query($conn, $query);
     }
 }
