@@ -32,14 +32,13 @@ function getComments($page_count) {
     }
 }
 
-function likeSubmit($row) {
-    require("connection.php");
+
+function likeSubmit($conn,$row) {
+ require("connection.php");
     if(isset($_POST[$row['message_id']])) {
-        $id = $row['message_id'];
+        $cid = $row['message_id'];
         $likes = $row['likes']+1;
-        $query = "UPDATE messages SET likes = '$likes' WHERE message_id = '$id'";
-        $result = mysqli_query($con, $query);
-        header('Location: index.php');
-        exit;
+        $query = "UPDATE comments SET likes = '$likes' WHERE message_id = '$cid'";
+        $result = mysqli_query($conn, $query);
     }
 }
