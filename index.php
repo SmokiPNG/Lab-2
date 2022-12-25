@@ -1,4 +1,5 @@
 <?php
+
     date_default_timezone_set('Europe/Moscow');
     include "connection.php";
     include "functions.php";
@@ -6,7 +7,7 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
+     <head>
         <meta charset="UTF-8">
         <title>Forum page</title>
         <link rel="stylesheet" type="text/css" href="style.css">
