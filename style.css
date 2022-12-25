@@ -1,0 +1,64 @@
+textarea {
+    width: 400px;
+    height: 80px;
+    background-color: #fff;
+    resize: none;
+    display:block;
+    margin-left: 25px;
+}
+
+
+
+.commentSubmit{
+    background-color: #04AA6D;
+    width: 200px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    font-family: arial;
+    font-weight: 400;
+    cursor: pointer;
+    opacity: 0.7;
+    display:block;
+    margin-left: 25px;
+}
+
+h1{
+    margin-left: 25px;
+    color: #04AA6D;
+}
+
+.commentSubmit:hover{
+    opacity: 1;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 25px;
+    max-width: 60%;
+}
+
+.likeSubmit{
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.hr{
+    margin-right: 715px;
+    margin-left: 25px;
+}
+
+
+
+.likeSubmit:hover{
+    opacity: 1;
+}
+
+.comment-box{
+    display: inline-block;
+    word-wrap: break-word;
+}
